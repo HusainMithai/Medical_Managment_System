@@ -1,0 +1,354 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+    border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 51px;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        padding: 30px 0px;
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+        background-color: #1a1a1a;
+        border-right: 1px solid #eee;
+    }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+    margin-right: -21px; /* 20px padding + 1px border */
+    margin-bottom: 20px;
+    margin-left: -20px;
+    background-color: #1a1a1a;
+    margin-top: -15px;
+}
+
+ul.nav.nav-sidebar li {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+
+
+
+
+
+.nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #fff;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+    color: #fff;
+    background-color: #143958;
+    ;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .main {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+
+.main .page-header {
+    margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+    .placeholders h4 {
+        margin-bottom: 0;
+    }
+
+.placeholder {
+    margin-bottom: 20px;
+}
+
+    .placeholder img {
+        display: inline-block;
+        border-radius: 50%;
+    }
+
+.main a {
+    text-decoration: none !important;
+    border: none;
+}
+
+.DBMenus :hover {
+    animation: ease-in;
+    border-radius: 3px !important;
+    color: #fff;
+}
+
+body .dataTables_wrapper .dataTables_filter input {
+    border: 1px solid #eae5e1;
+}
+
+.table-bordered th {
+    background-color: #143958;
+    color: #fff !IMPORTANT;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.table-bordered .form-control {
+    height: 40px !important;
+    border: 1px solid #80808000;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.0);
+    background: #143958;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+body .nav > li > a:hover, body .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #301a46;
+}
+
+span.fa-2x {
+    display: none;
+}
+
+body .dataTables_wrapper .dataTables_paginate {
+    text-align: center;
+    padding-top: 0em;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px !IMPORTANT;
+}
+
+body .dataTables_wrapper .dataTables_info {
+    clear: both;
+    float: left;
+    padding-top: 0;
+    padding: 14px 10px 0;
+    color: #143958;
+}
+
+
+body .dataTables_wrapper .dataTables_paginate .paginate_button.current, body .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #fff !important;
+    border: 1px solid #163a59;
+    background-color: #143958;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fff), color-stop(100%, #dcdcdc));
+    background: -webkit-linear-gradient(top, #fff 0%, #dcdcdc 100%);
+    background: -moz-linear-gradient(top, #fff 0%, #dcdcdc 100%);
+    background: -ms-linear-gradient(top, #fff 0%, #dcdcdc 100%);
+    background: -o-linear-gradient(top, #fff 0%, #dcdcdc 100%);
+    background: #143958;
+    color: #fff;
+}
+
+@media only screen and (min-width:767px) {
+    .navbar-brand.mbl {
+        display: none;
+    }
+}
+
+.top-drop i.fa.fa-user {
+    font-size: 27px;
+}
+
+@media only screen and (max-width:767px) {
+    div#amethystBackground2 .container {
+        margin-right: 0;
+        width: 100% !important;
+        padding-left: 10px !important;
+    }
+
+    .fc-row.fc-week.fc-widget-content {
+        min-height: 10px !important;
+        height: 48px !important;
+    }
+
+    .navbar-brand.dask {
+        display: none;
+    }
+
+    .sidebar {
+        display: block !important;
+    }
+
+    body .navbar-toggle {
+        position: fixed;
+        top: 0px;
+        float: right;
+        right: 10px;
+        padding: 9px 10px;
+        margin-top: 8px;
+        margin-right: 1px;
+        margin-bottom: 8px;
+        background-color: #2a2e61;
+        background-image: none;
+        border: 1px solid #673030;
+        border-radius: 4px;
+        z-index: 1000000000000000000;
+    }
+
+    .navbar-toggle .icon-bar {
+        background: #fff !important;
+    }
+
+    li.liDashBoard {
+        display: none;
+    }
+
+    .top-drop ul.nav.navbar-nav.navbar-right {
+        display: flex;
+        margin: 0;
+    }
+
+    .top-drop {
+        position: absolute;
+        top: 0;
+        right: 80px;
+    }
+
+    body .nav-sidebar {
+        margin-right: 0px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+        background-color: #1a1a1a;
+        margin-top: 0px;
+        border: 0;
+    }
+
+    .top-drop li.dropdown {
+        width: 65px;
+    }
+
+    .top-drop .navbar-nav .open .dropdown-menu {
+        position: absolute;
+        float: none;
+        width: 100px;
+        margin-top: 0;
+        background-color: #222222;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        right: 85px;
+        left: 0;
+        right: 0;
+        min-width: 140px;
+        padding: 0;
+    }
+
+
+        .top-drop .navbar-nav .open .dropdown-menu > li > a, .top-drop .navbar-nav .open .dropdown-menu .dropdown-header {
+            padding: 5px 15px 5px 5px;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+    .top-drop i.fa.fa-user {
+        font-size: 27px;
+    }
+}
+
+
+body .btn-default {
+    color: #fff;
+    background-color: #143958;
+    border-color: #143958;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    background: #f7f7f7;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+body .btn-default:hover {
+    color: #fff;
+    background-color: #0b253a;
+    border-color: #143958;
+}
+
+
+.col-sm-3.col-md-2.sidebar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+.col-sm-3.col-md-2.sidebar::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
+}
+
+.col-sm-3.col-md-2.sidebar::-webkit-scrollbar-thumb {
+    background-color: #143958;
+    border: 0px solid #092b48;
+}
+
+
+
+body .nav-tabs > li.active > a, body .nav-tabs > li.active > a:hover, body .nav-tabs > li.active > a:focus {
+    color: #fff;
+    cursor: default;
+    background-color: #d69f47;
+    border: 1px solid #d69f47;
+    border-bottom-color: transparent;
+}
